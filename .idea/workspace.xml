@@ -33,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/utils/api.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,6 +172,7 @@
         <option value="$PROJECT_DIR$/lib/tabViews/category_view/cate_listview.dart" />
         <option value="$USER_HOME$/flutter/packages/flutter/lib/src/rendering/object.dart" />
         <option value="$PROJECT_DIR$/lib/utils/api.dart" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -228,23 +239,6 @@
               <item name="Flutter_E_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flutter_E_Project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Flutter_E_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flutter_E_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flutter_E_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flutter_E_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="tabViews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flutter_E_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flutter_E_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -263,19 +257,19 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/xukankan/flutter/bin/cache/pkg/sky_engine/lib/async/timer.dart" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images/common/mine/login" />
+      <recent name="$PROJECT_DIR$/images/common" />
+      <recent name="$PROJECT_DIR$/images/common/mine" />
+      <recent name="$PROJECT_DIR$/lib/custom" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/redux" />
       <recent name="$PROJECT_DIR$/lib/tabViews/cart_view" />
       <recent name="$PROJECT_DIR$/lib/tabViews/category_view" />
       <recent name="$PROJECT_DIR$/lib/tabViews/mall_view" />
       <recent name="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/common/mine/login" />
-      <recent name="$PROJECT_DIR$/images/common" />
-      <recent name="$PROJECT_DIR$/images/common/mine" />
-      <recent name="$PROJECT_DIR$/lib/custom" />
-      <recent name="$PROJECT_DIR$/android/app/src/main/res/mipmap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,13 +504,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/redux-3.0.0/lib/src/utils.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="244" column="38" lean-forward="false" selection-start-line="244" selection-start-column="38" selection-end-line="244" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/redux-3.0.0/lib/redux.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -717,7 +704,15 @@
     <entry file="file://$PROJECT_DIR$/lib/utils/api.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
