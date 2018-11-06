@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cook_mother/utils/network.dart';
 import 'package:cook_mother/utils/api.dart';
-import 'package:cook_mother/common/row_item.dart';
-import 'package:cook_mother/tabViews/content_provider.dart';
+import 'package:cook_mother/widgets/row_item.dart';
+import 'package:cook_mother/tab_view/content_provider.dart';
 import 'package:cook_mother/pages/product_detail.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cook_mother/utils/colors.dart';
@@ -22,25 +22,41 @@ class _CateListViewState extends State<CateListView>
     with AutomaticKeepAliveClientMixin {
   BuildContext c;
   List products = [];
+  ScrollController controller = new ScrollController();
+  int page = 1;
+  bool isFinal = false;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     ajaxList();
-    print("111");
+    controller.addListener(() {
+      if (controller.position.pixels >
+          controller.position.maxScrollExtent - 50) {
+        if (isFinal) {
+          return;
+        }
+        ++page;
+        ajaxList();
+      }
+    });
   }
 
   ajaxList() {
     getHttp(host: Api.HOST, path: Api.CATE_LIST + widget.id + ".jhtml", query: {
-      "pageNumber": "1",
+      "pageNumber": page.toString(),
       "pageSize": "10",
       "orderType": "dateDesc",
       "storageRackId": "2",
       'timestamp': new DateTime.now().millisecondsSinceEpoch.toString(),
     }).then((res) {
+      if (res['products'] == null) {
+        isFinal = true;
+        return;
+      }
       setState(() {
-        products = res['products'];
+        products.addAll(res['products']);
       });
     });
   }
@@ -100,11 +116,14 @@ class _CateListViewState extends State<CateListView>
         Expanded(
             child: Container(
           child: CustomScrollView(
+            controller: controller,
             slivers: <Widget>[
               SliverAppBar(
                 flexibleSpace: Container(
                   child: CachedNetworkImage(
-                      imageUrl: "http://img.weidao.com/catlist/" + widget.id + ".png"),
+                      imageUrl: "http://img.weidao.com/catlist/" +
+                          widget.id +
+                          ".png"),
                 ),
                 expandedHeight: 100.0,
                 backgroundColor: Colors_Wd.TEXT_WHITE,

@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cook_mother/utils/colors.dart';
-import 'package:cook_mother/common/row_item.dart';
-import 'package:cook_mother/tabViews/content_provider.dart';
+import 'package:cook_mother/widgets/row_item.dart';
+import 'package:cook_mother/tab_view/content_provider.dart';
 import 'package:cook_mother/pages/product_detail.dart';
 
 class CommonView extends StatefulWidget {
@@ -70,16 +70,22 @@ class _CommonViewState extends State<CommonView> {
               GestureDetector(
                 onTap: (() {
                   BuildContext c = ContentProvider.of(context).rootContent;
-                  Navigator.push(c,
-                      new MaterialPageRoute(builder: (context) => ProductDetail(data: widget.data['miniProductBeans'][0])));
+                  Navigator.push(
+                      c,
+                      new MaterialPageRoute(
+                          builder: (context) => ProductDetail(
+                              data: widget.data['miniProductBeans'][0])));
                 }),
                 child: RowItem(data: widget.data['miniProductBeans'][0]),
               ),
               GestureDetector(
                 onTap: (() {
                   BuildContext c = ContentProvider.of(context).rootContent;
-                  Navigator.push(c,
-                      new MaterialPageRoute(builder: (context) => ProductDetail(data: widget.data['miniProductBeans'][1])));
+                  Navigator.push(
+                      c,
+                      new MaterialPageRoute(
+                          builder: (context) => ProductDetail(
+                              data: widget.data['miniProductBeans'][1])));
                 }),
                 child: RowItem(data: widget.data['miniProductBeans'][1]),
               )
@@ -94,16 +100,22 @@ class _CommonViewState extends State<CommonView> {
               GestureDetector(
                 onTap: (() {
                   BuildContext c = ContentProvider.of(context).rootContent;
-                  Navigator.push(c,
-                      new MaterialPageRoute(builder: (context) => ProductDetail(data: widget.data['miniProductBeans'][2])));
+                  Navigator.push(
+                      c,
+                      new MaterialPageRoute(
+                          builder: (context) => ProductDetail(
+                              data: widget.data['miniProductBeans'][2])));
                 }),
                 child: RowItem(data: widget.data['miniProductBeans'][2]),
               ),
               GestureDetector(
                 onTap: (() {
                   BuildContext c = ContentProvider.of(context).rootContent;
-                  Navigator.push(c,
-                      new MaterialPageRoute(builder: (context) => ProductDetail(data: widget.data['miniProductBeans'][3])));
+                  Navigator.push(
+                      c,
+                      new MaterialPageRoute(
+                          builder: (context) => ProductDetail(
+                              data: widget.data['miniProductBeans'][3])));
                 }),
                 child: RowItem(data: widget.data['miniProductBeans'][3]),
               )

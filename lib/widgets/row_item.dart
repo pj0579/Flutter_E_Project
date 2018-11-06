@@ -87,7 +87,9 @@ class _RowItemState extends State<RowItem> {
                 ),
                 StoreConnector<AppState, VoidCallback>(
                   converter: (store) {
-                    return () {return store.dispatch(AddCartAction(store.state.cartNumber));};
+                    return () {
+                      return store.dispatch(store.state.cartNumber%2==0?AddCartAction(store.state.cartNumber):RemoveCartAction(store.state.cartNumber));
+                    };
                   },
                   builder: (context, callback) {
                     return CupertinoButton(

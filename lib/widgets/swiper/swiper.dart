@@ -1,7 +1,7 @@
 import 'dart:ui' show Color;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:cook_mother/custom/swiper/infinite_page_view.dart';
+import 'package:cook_mother/widgets/swiper/infinite_page_view.dart';
 import 'dart:async' show Timer;
 
 class Swiper extends StatefulWidget {

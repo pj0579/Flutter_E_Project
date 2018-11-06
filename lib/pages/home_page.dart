@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:cook_mother/tabViews/mall_view/mall_view.dart';
-import 'package:cook_mother/tabViews/cart_view/cart_view.dart';
-import 'package:cook_mother/tabViews/category_view/category_view.dart';
-import 'package:cook_mother/tabViews/content_provider.dart';
+import 'package:cook_mother/tab_view/mall_view/mall_view.dart';
+import 'package:cook_mother/tab_view/cart_view/cart_view.dart';
+import 'package:cook_mother/tab_view/category_view/category_view.dart';
+import 'package:cook_mother/tab_view/content_provider.dart';
 import 'package:flutter_wechat/flutter_wechat.dart';
-import 'package:cook_mother/tabViews/mine_view/mine_view.dart';
+import 'package:cook_mother/tab_view/mine_view/mine_view.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:cook_mother/redux/app_state.dart';
 import 'package:cook_mother/utils/colors.dart';
